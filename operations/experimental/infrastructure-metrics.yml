@@ -27,13 +27,9 @@
               enabled: false
             bonding:
               enabled: false
-            buddyinfo:
-              enabled: false
             conntrack:
               enabled: false
             devstat:
-              enabled: false
-            drbd:
               enabled: false
             edac:
               enabled: false
@@ -47,21 +43,11 @@
               enabled: false
             infiniband:
               enabled: false
-            interrupts:
-              enabled: false
             ipvs:
-              enabled: false
-            ksmd:
               enabled: false
             loadavg:
               enabled: false
-            logind:
-              enabled: false
             mdadm:
-              enabled: false
-            meminfo_numa:
-              enabled: false
-            mountstats:
               enabled: false
             netdev:
               enabled: false
@@ -69,21 +55,9 @@
               enabled: false
             nfsd:
               enabled: false
-            ntp:
-              enabled: false
-            qdisc:
-              enabled: false
-            runit:
-              enabled: false
             sockstat:
               enabled: false
             stat:
-              enabled: false
-            supervisord:
-              enabled: false
-            systemd:
-              enabled: false
-            tcpstat:
               enabled: false
             textfile:
               enabled: false
