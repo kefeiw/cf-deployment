@@ -174,9 +174,6 @@
     doppler: {from: doppler}
 
 - type: remove
-  path: /addons/name=prom_scraper
-
-- type: remove
   path: /addons/name=loggregator_agent
 
 - type: replace

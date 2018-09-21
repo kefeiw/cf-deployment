@@ -13,6 +13,9 @@ test_test_ops() {
       check_interpolation "alter-ssh-proxy-redirect-uri.yml"
       check_interpolation "name: disable_windows_consul_agent_nameserver_overwriting.yml" "${home}/operations/windows-cell.yml" "-o disable_windows_consul_agent_nameserver_overwriting.yml"
       check_interpolation "name: windows2016-debug.yml" "${home}/operations/windows-cell.yml"
+      check_interpolation "name: add-persistent-isolation-segment-loggregator.yml" "add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml"
+      check_interpolation "name: add-persistent-isolation-segment-syslog-drain.yml" "add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml" "-o add-persistent-isolation-segment-syslog-drain.yml"
+      check_interpolation "name: alter-router-for-log-agent.yml" "add-persistent-isolation-segment-router.yml" "-o add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml" "-o alter-router-for-log-agent.yml"
     popd > /dev/null # operations/test
   popd > /dev/null
   exit $exit_code
