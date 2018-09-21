@@ -87,6 +87,9 @@
     jobs:
     - name: prom_scraper
       release: loggregator-agent
+      consumes:
+        loggregator:
+          from: loggregator
     include:
       stemcell:
       - os: ubuntu-trusty
