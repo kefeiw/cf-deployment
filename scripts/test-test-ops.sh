@@ -16,6 +16,7 @@ test_test_ops() {
       check_interpolation "name: add-persistent-isolation-segment-loggregator.yml" "add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml"
       check_interpolation "name: add-persistent-isolation-segment-syslog-drain.yml" "add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml" "-o add-persistent-isolation-segment-syslog-drain.yml"
       check_interpolation "name: alter-router-for-log-agent.yml" "add-persistent-isolation-segment-router.yml" "-o add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml" "-o alter-router-for-log-agent.yml"
+      check_interpolation "name: add-persistent-isolation-segment-infrastructure-metrics.yml" "${home}/operations/experimental/infrastructure-metrics.yml" "-o add-persistent-isolation-segment-diego-cell.yml" "-o add-persistent-isolation-segment-loggregator.yml" "-o add-persistent-isolation-segment-infrastructure-metrics.yml"
     popd > /dev/null # operations/test
   popd > /dev/null
   exit $exit_code
